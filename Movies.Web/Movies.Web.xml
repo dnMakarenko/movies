@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Movies.Web</name>
+    </assembly>
+    <members>
+        <member name="M:Movies.Web.Controllers.MoviesApiController.GetByTitle(System.String)">
+            <summary>
+            Returns movie by title. Example usage: GET: api/Movies/GetByTitle/{title}
+            </summary>
+            <param name="title">Represents movie name</param>
+            <returns>Object typeof(Movie).</returns>
+        </member>
+        <member name="M:Movies.Web.Controllers.MoviesApiController.Get">
+            <summary>
+            Returns all movies. Example usage: GET: api/Movies
+            </summary>
+            <returns>List of movies.</returns>
+        </member>
+        <member name="M:Movies.Web.Controllers.MoviesApiController.Get(System.Int32)">
+            <summary>
+            Returns movie by Id. Exaple usage: GET: api/Movies/5
+            </summary>
+            <param name="id">Represents Id of the movie.</param>
+            <returns>Object typeof(Movie).</returns>
+        </member>
+        <member name="M:Movies.Web.Controllers.MoviesApiController.Post(Movies.Data.Core.Models.Movie)">
+            <summary>
+            Create new movie. Example usage: POST: api/Movies
+            </summary>
+            <param name="model">Represents Movie model.</param>
+            <returns>Created Object typeof(Movie).</returns>
+        </member>
+        <member name="M:Movies.Web.Controllers.MoviesApiController.Put(System.Int32,Movies.Data.Core.Models.Movie)">
+            <summary>
+            Update exiting movie by Id. Example usage: PUT: api/Movies/{id}
+            </summary>
+            <param name="id">Represents Id of the movie.</param>
+            <param name="model">Represents Movie model.</param>
+            <returns>Updated Object typeof(Movie).</returns>
+        </member>
+        <member name="M:Movies.Web.Controllers.MoviesApiController.Delete(System.Int32)">
+            <summary>
+            Delete movie by Id. Example usage: DELETE: api/Movies/{id}
+            </summary>
+            <param name="id">Represents Id of the movie.</param>
+            <returns>204 if successfully deleted.</returns>
+        </member>
+    </members>
+</doc>
